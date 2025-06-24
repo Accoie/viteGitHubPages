@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "prettier": "prettier src -c",
     "prettier:write": "prettier --write src/**/*",
-    "stylelint": "stylelint **/*.css --allow-empty-input", 
+    "stylelint": "stylelint **/*.css --allow-empty-input",
     "stylelint:fix": "stylelint **/*.css --allow-empty-input --fix",
     "lint": "npm run eslint && npm run prettier && npm run stylelint"
   },

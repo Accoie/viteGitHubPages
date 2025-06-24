@@ -6,120 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/style.css" />
     <title>Onboarding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section class="home">
+    
+    <section id="required-docs" class="required-docs">
       <nav class="sidebar">
         <section class="sidebar__user">
-          <img class="sidebar__user__image" alt="" />
+          <img class="sidebar__user__image" src="icons/Avatar.svg" />
           <h3 class="sidebar__user__name">Константин К.</h3>
         </section>
         <ul class="sidebar__list">
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Главная</p>
+          <li class="sidebar__list__item">
+            <a href="#home" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/House.svg"></img>
+              <p class="sidebar__list__text">Главная</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Документы для оформления</p>
+          <li class="sidebar__list__item">
+            <a href="#required-docs" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Files.svg"></img>
+              <p class="sidebar__list__text">Документы для оформления</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Электронная подпись</p>
+          <li class="sidebar__list__item">
+            <a href="#digital-signature" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
+              <p class="sidebar__list__text">Электронная подпись</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>К кому обратиться</p>
+          <li class="sidebar__list__item">
+            <a href="#contacts" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
+              <p class="sidebar__list__text">К кому обратиться</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Руководитель и наставник</p>
+          <li class="sidebar__list__item">
+            <a href="#mentors" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Users.svg"></img>
+              <p class="sidebar__list__text">Руководитель и наставник</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Корпоративные ресурсы</p>
-          </li>
-        </ul>
-      </nav>
-      <section class="home__main">
-        <h1>Добро пожаловать в компанию!</h1>
-        <section class="user">
-          <img class="user__icon" alt="Аватар" />
-          <section class="user__info">
-            <h3 class="user__name"></h3>
-            <section class="user__details">
-              <ul class="details__list">
-                <li class="details__item">
-                  <h4 class="details__item__title">Юрлицо</h4>
-                  <p class="details__item__info">НКО «МОНЕТА» (ООО)</p>
-                </li>
-                <li class="details__item">
-                  <h4 class="details__item__title">Отдел/команда</h4>
-                  <p class="details__item__info">Фронтенд</p>              
-                </li>
-                <li class="details__item">
-                  <h4 class="details__item__title">Корпоративный e-mail</h4>
-                  <p class="details__item__info">mail@moneta.ru</p>
-                </li>
-              </ul>
-              <ul class="details__list">
-                <li class="details__item">
-                  <h4 class="details__item__title">Подразделение</h4>
-                  <p class="details__item__info">Разработка</p>
-                </li>
-                <li class="details__item">
-                  <h4 class="details__item__title">Должность</h4>
-                  <p class="details__item__info">Разработчик</p>
-                </li>
-                <li class="details__item">
-                  <h4 class="details__item__title">Место работы</h4>
-                  <p class="details__item__info">Офис на Мира</p>
-                </li>
-              </ul>
-              <button class="edit__button"></button>
-            </section>
-            <div class="splitter"></div>
-            <section class="user__info__editable">
-              <h3>О себе</h3>
-              <p>
-                Здесь будет информация о сотруднике, которую он сможет заполнить самостоятельно. 
-                Расскажите о своих интересах, опыте работы, навыках и другую информацию
-              </p>
-            </section>
-          </section>
-        </section>
-      </section>
-    </section>
-    <section class="required-docs">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" alt="" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Главная</p>
-          </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Документы для оформления</p>
-          </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Электронная подпись</p>
-          </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>К кому обратиться</p>
-          </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Руководитель и наставник</p>
-          </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Корпоративные ресурсы</p>
+          <li class="sidebar__list__item">
+            <a href="#resources" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
+              <p class="sidebar__list__text">Корпоративные ресурсы</p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -136,9 +70,9 @@
           <li class="required-docs__item">
             <svg></svg>
             <section class="required-docs__item__layout">
-              <h3>Трудования книжка</h3>
+              <h3>Трудовая книжка</h3>
               <p>
-                Трудования книжка либо форма СТД-Р с предыдущего места работы (в случае электронной трудовой книжки)
+                Трудовая книжка либо форма СТД-Р с предыдущего места работы (в случае электронной трудовой книжки)
               </p>
             </section>
           </li>
@@ -235,36 +169,48 @@
         </section>
       </section>
     </section>
-    <section class="ecp">
+    <section id="digital-signature" class="ecp">
       <nav class="sidebar">
         <section class="sidebar__user">
-          <img class="sidebar__user__image" alt="" />
+          <img class="sidebar__user__image" src="icons/Avatar.svg" />
           <h3 class="sidebar__user__name">Константин К.</h3>
         </section>
         <ul class="sidebar__list">
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Главная</p>
+          <li class="sidebar__list__item">
+            <a href="#home" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/House.svg"></img>
+              <p class="sidebar__list__text">Главная</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Документы для оформления</p>
+          <li class="sidebar__list__item">
+            <a href="#required-docs" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Files.svg"></img>
+              <p class="sidebar__list__text">Документы для оформления</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Электронная подпись</p>
+          <li class="sidebar__list__item">
+            <a href="#digital-signature" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
+              <p class="sidebar__list__text">Электронная подпись</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>К кому обратиться</p>
+          <li class="sidebar__list__item">
+            <a href="#contacts" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
+              <p class="sidebar__list__text">К кому обратиться</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Руководитель и наставник</p>
+          <li class="sidebar__list__item">
+            <a href="#mentors" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Users.svg"></img>
+              <p class="sidebar__list__text">Руководитель и наставник</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Корпоративные ресурсы</p>
+          <li class="sidebar__list__item">
+            <a href="#resources" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
+              <p class="sidebar__list__text">Корпоративные ресурсы</p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -307,36 +253,48 @@
         </section>
       </section>
     </section>
-    <section class="helpers">
+    <section id="contacts" class="helpers">
       <nav class="sidebar">
         <section class="sidebar__user">
-          <img class="sidebar__user__image" alt="" />
+          <img class="sidebar__user__image" src="icons/Avatar.svg" />
           <h3 class="sidebar__user__name">Константин К.</h3>
         </section>
         <ul class="sidebar__list">
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Главная</p>
+          <li class="sidebar__list__item">
+            <a href="#home" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/House.svg"></img>
+              <p class="sidebar__list__text">Главная</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Документы для оформления</p>
+          <li class="sidebar__list__item">
+            <a href="#required-docs" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Files.svg"></img>
+              <p class="sidebar__list__text">Документы для оформления</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Электронная подпись</p>
+          <li class="sidebar__list__item">
+            <a href="#digital-signature" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
+              <p class="sidebar__list__text">Электронная подпись</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>К кому обратиться</p>
+          <li class="sidebar__list__item">
+            <a href="#contacts" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
+              <p class="sidebar__list__text">К кому обратиться</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Руководитель и наставник</p>
+          <li class="sidebar__list__item">
+            <a href="#mentors" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Users.svg"></img>
+              <p class="sidebar__list__text">Руководитель и наставник</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Корпоративные ресурсы</p>
+          <li class="sidebar__list__item">
+            <a href="#resources" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
+              <p class="sidebar__list__text">Корпоративные ресурсы</p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -434,36 +392,48 @@
         </ul>
       </section>
     </section>
-    <section class="mentors">
+    <section id="mentors" class="mentors">
       <nav class="sidebar">
         <section class="sidebar__user">
-          <img class="sidebar__user__image" alt="" />
+          <img class="sidebar__user__image" src="icons/Avatar.svg" />
           <h3 class="sidebar__user__name">Константин К.</h3>
         </section>
         <ul class="sidebar__list">
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Главная</p>
+          <li class="sidebar__list__item">
+            <a href="#home" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/House.svg"></img>
+              <p class="sidebar__list__text">Главная</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Документы для оформления</p>
+          <li class="sidebar__list__item">
+            <a href="#required-docs" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Files.svg"></img>
+              <p class="sidebar__list__text">Документы для оформления</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Электронная подпись</p>
+          <li class="sidebar__list__item">
+            <a href="#digital-signature" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
+              <p class="sidebar__list__text">Электронная подпись</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>К кому обратиться</p>
+          <li class="sidebar__list__item">
+            <a href="#contacts" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
+              <p class="sidebar__list__text">К кому обратиться</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Руководитель и наставник</p>
+          <li class="sidebar__list__item">
+            <a href="#mentors" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Users.svg"></img>
+              <p class="sidebar__list__text">Руководитель и наставник</p>
+            </a>
           </li>
-          <li class="sidebar__list__link">
-            <svg></svg>
-            <p>Корпоративные ресурсы</p>
+          <li class="sidebar__list__item">
+            <a href="#resources" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
+              <p class="sidebar__list__text">Корпоративные ресурсы</p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -501,6 +471,100 @@
             <div>Наставник</div>
           </section>
         </div>
+      </section>
+    </section>
+    <section id="home" class="home">
+      <nav class="sidebar">
+        <section class="sidebar__user">
+          <img class="sidebar__user__image" src="icons/Avatar.svg" />
+          <h3 class="sidebar__user__name">Константин К.</h3>
+        </section>
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item">
+            <a href="#home" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/House.svg"></img>
+              <p class="sidebar__list__text">Главная</p>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#required-docs" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Files.svg"></img>
+              <p class="sidebar__list__text">Документы для оформления</p>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#digital-signature" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
+              <p class="sidebar__list__text">Электронная подпись</p>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#contacts" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
+              <p class="sidebar__list__text">К кому обратиться</p>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#mentors" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Users.svg"></img>
+              <p class="sidebar__list__text">Руководитель и наставник</p>
+            </a>
+          </li>
+          <li class="sidebar__list__item">
+            <a href="#resources" class="sidebar__list__link">
+              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
+              <p class="sidebar__list__text">Корпоративные ресурсы</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="home__main">
+        <h1>Добро пожаловать в компанию!</h1>
+        <section class="user">
+          <img class="user__icon" alt="Аватар" />
+          <section class="user__info">
+            <h3 class="user__name"></h3>
+            <section class="user__details">
+              <ul class="details__list">
+                <li class="details__item">
+                  <h4 class="details__item__title">Юрлицо</h4>
+                  <p class="details__item__info">НКО «МОНЕТА» (ООО)</p>
+                </li>
+                <li class="details__item">
+                  <h4 class="details__item__title">Отдел/команда</h4>
+                  <p class="details__item__info">Фронтенд</p>              
+                </li>
+                <li class="details__item">
+                  <h4 class="details__item__title">Корпоративный e-mail</h4>
+                  <p class="details__item__info">mail@moneta.ru</p>
+                </li>
+              </ul>
+              <ul class="details__list">
+                <li class="details__item">
+                  <h4 class="details__item__title">Подразделение</h4>
+                  <p class="details__item__info">Разработка</p>
+                </li>
+                <li class="details__item">
+                  <h4 class="details__item__title">Должность</h4>
+                  <p class="details__item__info">Разработчик</p>
+                </li>
+                <li class="details__item">
+                  <h4 class="details__item__title">Место работы</h4>
+                  <p class="details__item__info">Офис на Мира</p>
+                </li>
+              </ul>
+              <button class="edit__button"></button>
+            </section>
+            <div class="splitter"></div>
+            <section class="user__info__editable">
+              <h3>О себе</h3>
+              <p>
+                Здесь будет информация о сотруднике, которую он сможет заполнить самостоятельно. 
+                Расскажите о своих интересах, опыте работы, навыках и другую информацию
+              </p>
+            </section>
+          </section>
+        </section>
       </section>
     </section>
   </body>
