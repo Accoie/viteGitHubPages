@@ -1,7 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
 :root {
-  --font-family: "Wix Madefor Display", sans-serif;
-   margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.home, .required-docs, .ecp, .helpers, .mentors {
+  display: none;
 }
 body {
-    margin: 0;
+  margin: 0;
+}
+.sidebar {
+  background-color: #F4F6F8;
+  margin: 0;
+}
+.sidebar__user {
+  display: flex;
+}
+.sidebar__user__image{
+  padding-left: 2px;
+}
+.sidebar__list__image {
+  padding-right: 6px;
+}
+.sidebar__list__text {
+  font-size: 16px;
+  white-space: nowrap;
+  margin: 0;
+}
+.sidebar__user__name {
+    margin: auto auto auto 0;
+}
+.sidebar__list {
+  list-style: none; 
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 16px;
+
+  margin: 0;
+  
+}
+
+.sidebar__list__item {
+  margin: 0; 
+  padding: 0;
+  border-radius: 8px;
+}
+
+.sidebar__list__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px; 
+  margin: 2px 0;
+}
+
+section:target {
+  display: flex;
 }
