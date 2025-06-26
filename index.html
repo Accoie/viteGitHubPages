@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
   <body>
-    <section id="required-docs" class="required-docs">
+    <template id="sidebar-template">
       <nav class="sidebar">
         <section class="sidebar__user">
           <img class="sidebar__user__image" src="icons/Avatar.svg" />
@@ -56,6 +57,10 @@
           </li>
         </ul>
       </nav>
+    </template>
+    
+    <section id="required-docs" class="required-docs">
+      <div class="sidebar-container"></div>
       <section class="required-docs__main">
         <h1 class="main__title">Документы для оформления</h1>
         <ul class="required-docs__main__list">
@@ -169,50 +174,7 @@
       </section>
     </section>
     <section id="ecp" class="ecp">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__item">
-            <a href="#home" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/House.svg"></img>
-              <p class="sidebar__list__text">Главная</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#required-docs" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Files.svg"></img>
-              <p class="sidebar__list__text">Документы для оформления</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#ecp" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
-              <p class="sidebar__list__text">Электронная подпись</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#helpers" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
-              <p class="sidebar__list__text">К кому обратиться</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#mentors" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Users.svg"></img>
-              <p class="sidebar__list__text">Руководитель и наставник</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#resources" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
-              <p class="sidebar__list__text">Корпоративные ресурсы</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="sidebar-container"></div>
       <section class="ecp__main">
         <h1 class="main__title">Электронная подпись</h1>
         <p>
@@ -259,50 +221,7 @@
       </section>
     </section>
     <section id="helpers" class="helpers">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__item">
-            <a href="#home" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/House.svg"></img>
-              <p class="sidebar__list__text">Главная</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#required-docs" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Files.svg"></img>
-              <p class="sidebar__list__text">Документы для оформления</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#ecp" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
-              <p class="sidebar__list__text">Электронная подпись</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#helpers" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
-              <p class="sidebar__list__text">К кому обратиться</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#mentors" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Users.svg"></img>
-              <p class="sidebar__list__text">Руководитель и наставник</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#resources" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
-              <p class="sidebar__list__text">Корпоративные ресурсы</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="sidebar-container"></div>
       <section class="helpers__main">
         <h1 class="main__title">К кому обратиться за помощью</h1>
         <ul class="helpers__main__list">
@@ -408,50 +327,7 @@
       </section>
     </section>
     <section id="mentors" class="mentors">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__item">
-            <a href="#home" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/House.svg"></img>
-              <p class="sidebar__list__text">Главная</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#required-docs" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Files.svg"></img>
-              <p class="sidebar__list__text">Документы для оформления</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#ecp" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
-              <p class="sidebar__list__text">Электронная подпись</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#helpers" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
-              <p class="sidebar__list__text">К кому обратиться</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#mentors" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Users.svg"></img>
-              <p class="sidebar__list__text">Руководитель и наставник</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#resources" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
-              <p class="sidebar__list__text">Корпоративные ресурсы</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="sidebar-container"></div>
       <section class="mentors__main">
         <h1 class="main__title">Руководитель и наставник</h1>
         <div class="mentors__main__layout">
@@ -497,100 +373,14 @@
       </section>
     </section>
     <section id="resources" class="resources">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__item">
-            <a href="#home" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/House.svg"></img>
-              <p class="sidebar__list__text">Главная</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#required-docs" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Files.svg"></img>
-              <p class="sidebar__list__text">Документы для оформления</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#ecp" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
-              <p class="sidebar__list__text">Электронная подпись</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#helpers" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
-              <p class="sidebar__list__text">К кому обратиться</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#mentors" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Users.svg"></img>
-              <p class="sidebar__list__text">Руководитель и наставник</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#resources" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
-              <p class="sidebar__list__text">Корпоративные ресурсы</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="sidebar-container"></div>
       <section class="resources__main">
         <h1 class="main__title">Корпоративные ресурсы</h1>
       </section>
       
     </section>
     <section id="home" class="home">
-      <nav class="sidebar">
-        <section class="sidebar__user">
-          <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
-        </section>
-        <ul class="sidebar__list">
-          <li class="sidebar__list__item">
-            <a href="#home" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/House.svg"></img>
-              <p class="sidebar__list__text">Главная</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#required-docs" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Files.svg"></img>
-              <p class="sidebar__list__text">Документы для оформления</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#ecp" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Signature.svg"></img>
-              <p class="sidebar__list__text">Электронная подпись</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#helpers" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Headset.svg"></img>
-              <p class="sidebar__list__text">К кому обратиться</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#mentors" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Users.svg"></img>
-              <p class="sidebar__list__text">Руководитель и наставник</p>
-            </a>
-          </li>
-          <li class="sidebar__list__item">
-            <a href="#resources" class="sidebar__list__link">
-              <img class="sidebar__list__image" src="icons/Folder.svg"></img>
-              <p class="sidebar__list__text">Корпоративные ресурсы</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="sidebar-container"></div>
       <section class="home__main">
         <h1 class="main__title">Добро пожаловать в компанию!</h1>
         <section class="user">

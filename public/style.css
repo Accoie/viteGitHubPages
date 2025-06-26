@@ -16,6 +16,7 @@
 body {
   margin: 0;
   width: 100%;
+  display: flex;
 }
 
 .main__title {
@@ -72,6 +73,12 @@ body {
   padding: 8px 16px; 
   margin: 2px 0;
 }
+.sidebar__list__link.active {
+  background-color: #E2E6ED;
+  border-radius: 8px;
+  position: relative;
+}
+
 /*=============SIDEBAR===============*/
 
 /*=============HOME===============*/
