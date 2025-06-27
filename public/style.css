@@ -21,6 +21,7 @@ body {
 
 .main__title {
   font-size:28px;
+  width: 100%;
 }
 /*=============SIDEBAR===============*/
 .sidebar {
@@ -82,13 +83,20 @@ body {
 /*=============SIDEBAR===============*/
 
 /*=============HOME===============*/
-
+.home {
+  display: flex;
+  width: 100%;
+}
 .home__main {
   padding-right: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .user {
   display: flex;
+  width: 100%;
 }
 
 .user__name {
@@ -102,7 +110,9 @@ body {
 .user__info {
   width: 100%;
 }
-
+.editable__info {
+  width: 100%;
+}
 .user__details {
   width: 100%;
   display: flex;
@@ -132,7 +142,7 @@ body {
 
 /*=============REQUIRED-DOCS===============*/
 .required-docs__main {
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .required-docs__main__list {
