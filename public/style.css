@@ -105,6 +105,9 @@ body {
 
 .user__icon {
   align-self: flex-start; 
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 .user__info {
@@ -266,7 +269,43 @@ body {
 .helpers__main {
   width: 100%;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 .helpers__main__list {
   list-style: none;
   display: flex;
@@ -348,6 +387,7 @@ body {
 
 .mentors__main__item {
   border: #E2E6ED 1px solid;
+  border-radius: 8px;
   flex: 1; 
   min-width: 0; 
   display: flex;
