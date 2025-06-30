@@ -16,7 +16,7 @@
       <nav class="sidebar">
         <section class="sidebar__user">
           <img class="sidebar__user__image" src="icons/Avatar.svg" />
-          <h3 class="sidebar__user__name">Константин К.</h3>
+          <h3 id="sidebar-user-name" class="sidebar__user__name"></h3>
         </section>
         <ul class="sidebar__list">
           <li class="sidebar__list__item">
@@ -64,14 +64,14 @@
       <section class="required-docs__main">
         <h1 class="main__title">Документы для оформления</h1>
         <ul class="required-docs__main__list">
-          <li class="required-docs__main__list__item">
+          <li class="required-docs__main__list__item" data-doc="Паспорт РФ">
             <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
             <section class="required-docs__main__list__item__layout">
-              <h4 class="required-docs__main__list__item__title">Паспорт РФ</h4>
+              <h4 class="required-docs__main__list__item__title" >Паспорт РФ</h4>
               <p>Необходимо предоставить оригинал и копию паспорта</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
+          <li class="required-docs__main__list__item" data-doc="Трудовая книжка либо форма СТД-Р">
             <img class= "required-docs__img" src="icons/d.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Трудовая книжка</h4>
@@ -80,78 +80,78 @@
               </p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="СНИЛС">
+            <img class= "required-docs__img" src="icons/s.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">СНИЛС</h4>
               <p>Страховое свидетельство государственного пенсионного страхования</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="ИНН">
+            <img class= "required-docs__img" src="icons/s.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">ИНН</h4>
               <p>Свидетельство о постановке на учёт в налоговом органе</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Военный билет (для военнообязанных)">
+            <img class= "required-docs__img" src="icons/v.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Военный билет</h4>
               <p>Военный билет для военнообязанных либо документ, его заменяющий</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Диплом об образовании">
+            <img class= "required-docs__img" src="icons/b.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Диплом об образовании</h4>
               <p>Диплом (свидетельство, сертификат и т.д.) об образовании</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Фактический адрес (если отличается от прописки)">
+            <img class= "required-docs__img" src="icons/c.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Фактический адрес</h4>
               <p>Если отличается от прописки</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Номер телефона">
+            <img class= "required-docs__img" src="icons/n.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Номер телефона</h4>
               <p>Контактный номер телефона</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Адрес личной электронной почты">
+            <img class= "required-docs__img" src="icons/p.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Адрес личной электронной почты</h4>
               <p>Личный e-mail для связи</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Реквизиты банковской карты">
+            <img class= "required-docs__img" src="icons/pp.svg "></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Реквизиты банковской карты</h4>
               <p>Для перечисления заработной платы</p>
             </section>
           </li>
           <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+            <img class= "required-docs__img" src="icons/q.svg" data-doc="Свидетельство о заключении брака"></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Свидетельство о заключении брака</h4>
               <p>При наличии</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Свидетельство о рождении ребёнка">
+            <img class= "required-docs__img" src="icons/z.svg"></img>
             <section class="required-docs__main__list__item__layout">
-              <h4 class="required-docs__main__list__item__title">Свидетельство о рождении брака</h4>
+              <h4 class="required-docs__main__list__item__title">Свидетельство о рождении ребёнка</h4>
               <p>При наличии</p>
             </section>
           </li>
-          <li class="required-docs__main__list__item">
-            <img class= "required-docs__img" src="icons/Frame 5119.svg "></img>
+          <li class="required-docs__main__list__item" data-doc="Справка по форме 2-НДФЛ">
+            <img class= "required-docs__img" src="icons/r.svg"></img>
             <section class="required-docs__main__list__item__layout">
               <h4 class="required-docs__main__list__item__title">Справка с предыдущего места работы по форме 2-НДФЛ</h4>
               <p>
@@ -224,105 +224,7 @@
       <div class="sidebar-container"></div>
       <section class="helpers__main">
         <h1 class="main__title">К кому обратиться за помощью</h1>
-        <ul class="helpers__main__list">
-          <li class="helpers__main__list__item">
-            <div class="helpers__main__list__item__layout">
-              <div class="helpers__main__list__content">
-              <img class="helpers__icon" src="icons/Photo.svg" />
-              <h3 class="helpers__main__list__item__name">Имя Фамилия</h3>
-              <h4>Ведущий специалист по кадрам</h4>
-              <div class="list__layout">
-                <p>Вопросы:</p>
-                <ul class="standart-list">
-                  <li>Оформления на работу</li>
-                  <li>Отпуска</li>
-                  <li>Больничного</li>
-                  <li>Выдачи справок по заработной плате и трудовой деятельности</li>
-                </ul>               
-              </div>
-              <div class="contact__list">
-                <img class="contact__icon" src="icons/Frame 5112.svg"/>
-                <img class="contact__icon" src="icons/Frame 5144.svg"/>
-                <img class="contact__icon" src="icons/Frame 5145.svg"/>
-                <img class="contact__icon" src="icons/Frame 5146.svg"/>
-                <img class="contact__icon" src="icons/Frame 5147.svg"/>
-              </div>
-              </div>
-              <h5 class="helpers__main__list__item__title helpers__main__list__item__title--purp">Трудовые отношения с компанией</h5>
-            </div>
-            
-          </li>
-          <li class="helpers__main__list__item">
-            <div class="helpers__main__list__item__layout">
-              <div class="helpers__main__list__content">
-              <img class="helpers__icon" src="icons/Photo.svg" />
-              <h3 class="helpers__main__list__item__name">Имя Фамилия</h3>
-              <h4>Ведущий специалист технического отдела</h4>
-              <div class="list__layout">
-                <p>Вопросы:</p>
-                <ul class="standart-list">
-                  <li>Подключения компьютера к рабочим пространствам компании</li>
-                  <li>Оборудования рабочего места</li>
-                  <li>Получения инструкций, логинов и паролей для внутренних ресурсов</li>
-                </ul>               
-              </div>
-              <div class="contact__list">
-                <img class="contact__icon" src="icons/Frame 5112.svg"/>
-                <img class="contact__icon" src="icons/Frame 5144.svg"/>
-                <img class="contact__icon" src="icons/Frame 5145.svg"/>
-                <img class="contact__icon" src="icons/Frame 5146.svg"/>
-                <img class="contact__icon" src="icons/Frame 5147.svg"/>
-              </div>
-            </div>
-            <h5 class="helpers__main__list__item__title helpers__main__list__item__title--green">Настройки рабочего пространства</h5>
-            </div>
-            
-          </li>
-          <li class="helpers__main__list__item">
-            <div class="helpers__main__list__item__layout">
-              <div class="helpers__main__list__content">
-                <img class="helpers__icon" src="icons/Photo.svg" />
-                <h3 class="helpers__main__list__item__name">Имя Фамилия</h3>
-                <h4>Ведущий специалист HR-отдела</h4>
-                <div class="list__layout">
-                  <p>Вопросы:</p>
-                  <ul class="standart-list">
-                    <li>Адаптация</li>
-                    <li>Выдачи велком-пака и толстовок</li>
-                    <li>Создания комфортных условий труда</li>
-                    <li>Оформления ДМС после испытательного срока</li>
-                    <li>Организации обучения и развития</li>
-                    <li>Создания комфортных условий труда</li>
-                  </ul>               
-                </div>
-                <div class="contact__list">
-                  <img class="contact__icon" src="icons/Frame 5112.svg"/>
-                  <img class="contact__icon" src="icons/Frame 5144.svg"/>
-                  <img class="contact__icon" src="icons/Frame 5145.svg"/>
-                  <img class="contact__icon" src="icons/Frame 5146.svg"/>
-                  <img class="contact__icon" src="icons/Frame 5147.svg"/>
-                </div>
-              </div>
-              <h5 class="helpers__main__list__item__title helpers__main__list__item__title--yellow">Адаптация</h5>
-            </div>
-          </li>
-          <li class="helpers__main__list__item">
-            <div class="helpers__main__list__item__layout">
-              <div class="helpers__main__list__content">
-              <img class="helpers__icon" src="icons/Photo.svg" />
-              <h3 class="helpers__main__list__item__name">Имя Фамилия</h3>
-              <h4>Должность</h4>
-              <div class="contact__list">
-                <img class="contact__icon" src="icons/Frame 5112.svg"/>
-                <img class="contact__icon" src="icons/Frame 5144.svg"/>
-                <img class="contact__icon" src="icons/Frame 5145.svg"/>
-                <img class="contact__icon" src="icons/Frame 5146.svg"/>
-                <img class="contact__icon" src="icons/Frame 5147.svg"/>
-              </div>
-            </div>
-              <h5 class="helpers__main__list__item__title helpers__main__list__item__title--blue ">По любым другим вопросам</h5>
-            </div>
-          </li>
+        <ul class="helpers__main__list">  
         </ul>
       </section>
     </section>
@@ -332,23 +234,6 @@
         <h1 class="main__title">Руководитель и наставник</h1>
         <div class="mentors__main__layout">
           <div class="mentors__main__item">
-            <div class="helpers__main__list__item__layout">
-              <div class="helpers__main__list__content">
-              <img class="helpers__icon" src="icons/Photo.svg" />
-              <h3 class="helpers__main__list__item__name">Имя Фамилия</h3>
-              <h4>Должность</h4>
-              <div class="contact__list">
-                <img class="contact__icon" src="icons/Frame 5112.svg"/>
-                <img class="contact__icon" src="icons/Frame 5144.svg"/>
-                <img class="contact__icon" src="icons/Frame 5145.svg"/>
-                <img class="contact__icon" src="icons/Frame 5146.svg"/>
-                <img class="contact__icon" src="icons/Frame 5147.svg"/>
-              </div>
-            
-              
-              </div>
-              <h5 class="helpers__main__list__item__title helpers__main__list__item__title--yellow">Руководитель</h5>
-            </div>
           </div>
           <div class="mentors__main__item">
             <div class="helpers__main__list__item__layout">
@@ -384,22 +269,22 @@
       <section class="home__main">
         <h1 class="main__title">Добро пожаловать в компанию!</h1>
         <section class="user">
-          <img class="user__icon" src="icons/Photo.svg" />
+          <img id="home-user-photo" class="user__icon"  src="icons/Photo.svg" />
            <section class="user__info">
-            <h3 class="user__name">Константин К.</h3>
+            <h3 id="user-name" class="user__name"></h3>
             <section class="user__details">
               <ul class="details__list">
                 <li class="details__item">
                   <h4 class="details__item__title">Юрлицо</h4>
-                  <p class="details__item__info">НКО «МОНЕТА» (ООО)</p>
+                  <p id="organization" class="details__item__info"></p>
                 </li>
                 <li class="details__item">
                   <h4 class="details__item__title">Отдел/команда</h4>
-                  <p class="details__item__info">Фронтенд</p>              
+                  <p id="department" class="details__item__info"></p>              
                 </li>
                 <li class="details__item">
                   <h4 class="details__item__title">Корпоративный e-mail</h4>
-                  <p class="details__item__info">mail@moneta.ru</p>
+                  <p id="email" class="details__item__info"></p>
                 </li>
               </ul>
               <ul class="details__list">
@@ -409,11 +294,11 @@
                 </li>
                 <li class="details__item">
                   <h4 class="details__item__title">Должность</h4>
-                  <p class="details__item__info">Разработчик</p>
+                  <p id="position" class="details__item__info">Разработчик</p>
                 </li>
                 <li class="details__item">
                   <h4 class="details__item__title">Место работы</h4>
-                  <p class="details__item__info">Офис на Мира</p>
+                  <p id="office" class="details__item__info"></p>
                 </li>
               </ul>
               <img class="edit__icon" src="icons/edit.svg"></img>
@@ -425,9 +310,7 @@
         <div class="splitter"></div>  
         <section class="editable__info">
           <h3>О себе</h3>
-          <p>
-            Здесь будет информация о сотруднике, которую он сможет заполнить самостоятельно. 
-            Расскажите о своих интересах, опыте работы, навыках и другую информацию
+          <p id="about">     
           </p>
         </section>
       </section>
