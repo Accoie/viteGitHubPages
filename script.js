@@ -25,8 +25,8 @@ function createMentorElement(mentor, isMain = false) {
   mentorDiv.innerHTML = `
     <div class="helpers__main__list__item__layout">
       <div class="helpers__main__list__content">
-        <img class="helpers__icon" src="${iconsDirectory}${`Photo.svg`}" 
-             onerror="this.src='${iconsDirectory}${`Photo.svg`}'"/>
+        <img class="helpers__icon" src="icon/Photo.svg"/>
+             
         <h3 class="helpers__main__list__item__name">${mentor.fullName}</h3>
         <h4>${mentor.position}</h4>
         <div class="contact__list">
