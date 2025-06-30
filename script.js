@@ -9,6 +9,7 @@ let employeeData = {
   helpContacts: [],
   mentors: []
 };
+
 const iconsDirectory = "viteGitHubPages/icons/"
 
 function createMentorElement(mentor, isMain = false) {
