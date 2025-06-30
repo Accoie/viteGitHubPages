@@ -91,7 +91,7 @@ function createHelperElement(contact) {
     <div class="helpers__main__list__item__layout">
       <div class="helpers__main__list__content">
       
-        <img class="helpers__icon" src="/icons/Photo.svg"/>
+        <img class="helpers__icon" src="icons/Photo.svg"/>
         <h3 class="helpers__main__list__item__name">${contact.fullName}</h3>
         <h4>${contact.position}</h4>
         <div class="list__layout">
