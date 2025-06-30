@@ -32,31 +32,31 @@ function createMentorElement(mentor, isMain = false) {
         <div class="contact__list">
           ${mentor.phone ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5112.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5112.svg"/>
               <span class="tooltiptext">${mentor.phone}</span>
             </div>` : ''}
           
           ${mentor.email ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5144.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5144.svg"/>
               <span class="tooltiptext">${mentor.email}</span>
             </div>` : ''}
           
           ${mentor.telegram ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5145.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5145.svg"/>
               <span class="tooltiptext">${mentor.telegram}</span>
             </div>` : ''}
           
           ${mentor.mattermost ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5146.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5146.svg"/>
               <span class="tooltiptext">Mattermost: ${mentor.mattermost}</span>
             </div>` : ''}
           
           ${mentor.officeAddress ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5147.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5147.svg"/>
               <span class="tooltiptext">${mentor.officeAddress}</span>
             </div>` : ''}
         </div>
@@ -90,6 +90,7 @@ function createHelperElement(contact) {
   li.innerHTML = `
     <div class="helpers__main__list__item__layout">
       <div class="helpers__main__list__content">
+      
         <img class="helpers__icon" src="/icons/Photo.svg"/>
         <h3 class="helpers__main__list__item__name">${contact.fullName}</h3>
         <h4>${contact.position}</h4>
@@ -102,31 +103,31 @@ function createHelperElement(contact) {
         <div class="contact__list">
           ${contact.officeAddress ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5112.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5112.svg"/>
               <span class="tooltiptext">${contact.officeAddress}</span>
             </div>` : ''}
           
           ${contact.phone ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5145.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5145.svg"/>
               <span class="tooltiptext">${contact.phone}</span>
             </div>` : ''}
           
           ${contact.email ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5144.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5144.svg"/>
               <span class="tooltiptext">${contact.email}</span>
             </div>` : ''}
           
           ${contact.telegram ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5146.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5146.svg"/>
               <span class="tooltiptext">${contact.telegram}</span>
             </div>` : ''}
           
           ${contact.mattermost ? `
             <div class="tooltip">
-              <img class="contact__icon" src="${iconsDirectory}${`Frame 5147.svg`}"/>
+              <img class="contact__icon" src="/icons/Frame 5147.svg"/>
               <span class="tooltiptext">Mattermost: ${contact.mattermost}</span>
             </div>` : ''}
         </div>
